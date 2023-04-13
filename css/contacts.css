@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  list-style: none;
+  color: var(--color-white);
+}
+
+.icon {
+  color: var(--color-pink);
+}
+
+.icon_name {
+  color: var(--color-pink);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+span {
+  padding: 0.2rem 0;
+}
+
+.span-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  font-style: oblique;
+}
+
+.home {
+  position: fixed;
+  left: 3%;
+  top: 5%;
+  font-size: 1.5rem;
+  color: var(--color-white);
+  z-index: 10;
+}
+
+main {
+  background-color: black;
+  background-image: linear-gradient(
+    rgba(146, 146, 146, 0.381),
+    rgba(5, 5, 5, 0.863)
+  );
+  height: 150vh;
+}
+
+.main__wrapper {
+  position: relative;
+  top: 15%;
+}
+
+.main__header {
+  position: relative;
+  text-align: center;
+}
+
+.main__contact-card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin: 5rem auto;
+}
+
+.main__contact-card_wrapper {
+  padding-top: 2rem;
+  flex-direction: column;
+  display: flex;
+}
+
+.main__contact-card_first,
+.main__contact-card_second,
+.main__contact-card_third {
+  /* display: flex; */
+  /* flex-direction: column; */
+  background-color: transparent;
+  width: 20rem;
+  text-align: center;
+  height: 15rem;
+}
+
+.main__contact-card_first,
+.main__contact-card_second {
+  border-right: 3px solid var(--color-pink);
+}
+
+.main__social-networks {
+  position: relative;
+  display: flex;
+}

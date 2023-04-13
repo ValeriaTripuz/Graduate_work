@@ -1,0 +1,46 @@
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  background-color: rgb(97, 97, 97);
+  font-size: 1.2rem;
+  width: 40rem;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: transparent;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+input {
+  height: 2.5rem;
+}
+
+input:focus {
+  color: var(--color-pink);
+  background-color: var(--color-white);
+}
+
+textarea:focus {
+  color: var(--color-pink);
+  background-color: var(--color-white);
+}
+
+input::-webkit-input-placeholder {
+  color: var(--color-white);
+}
+
+textarea::-webkit-input-placeholder {
+  color: var(--color-white);
+}
+
+.button {
+  margin: 4rem auto;
+}

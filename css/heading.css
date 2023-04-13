@@ -1,0 +1,17 @@
+.heading1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.heading3 {
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.heading4 {
+  padding: 1.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 200;
+}

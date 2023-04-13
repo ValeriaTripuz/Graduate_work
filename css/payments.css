@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  list-style: none;
+  color: var(--color-white);
+}
+
+.home {
+  position: fixed;
+  left: 3%;
+  top: 5%;
+  font-size: 1.5rem;
+  color: var(--color-white);
+  z-index: 20;
+}
+
+main {
+  background-color: black;
+}
+
+.background_video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: max-content;
+  height: fit-content;
+  /* width: 100%;
+  height: 100%; */
+  display: block;
+}
+
+.info__item {
+  /* background-color: rgba(0, 0, 0, 0.819); */
+  /* height: 100vh; */
+  padding-bottom: 2rem;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  left: 0%;
+  top: 10%;
+  background: rgba(0, 0, 0, 0.79);
+  color: var(--color-white);
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 10%;
+}
+
+.info__header {
+  font-size: 1.8rem;
+  font-weight: 200;
+  /* width: 60%;
+  margin: 0 auto;
+  text-align: left; */
+  text-transform: uppercase;
+}
+
+.info__header:hover {
+  font-size: 1.9rem;
+  padding: 0.3rem;
+  color: white;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.info__header:focus {
+  color: pink;
+}
+
+.info {
+  width: 60%;
+  margin: 5rem auto;
+  text-align: left;
+}
+
+/* .accordion__header::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  content: "";
+}
+
+.accordion__item_show .accordion__header::after {
+  transform: rotate(-180deg);
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__body {
+  display: none;
+} */
+
+.info__body {
+  display: none;
+}
+
+.active {
+  display: block;
+  margin-top: 1.5rem;
+}

@@ -8,9 +8,12 @@ body {
   font-size: 16px;
   font-family: "Roboto Condensed", sans-serif;
   list-style: none;
-  color: rgba(0, 0, 0, 0.869);
+  color: var(--color);
 }
 /* HEADER */
+
+.header {
+}
 .header__nav {
   position: relative;
   display: flex;
@@ -47,7 +50,7 @@ body {
 }
 
 .navigation li a {
-  color: black;
+  color: var(--color);
   text-decoration: none;
 }
 
@@ -55,120 +58,85 @@ body {
   /* border: 1px solid black; */
 }
 
-.icon {
-  position: relative;
-  top: 1rem;
-  font-size: 1.8rem;
-  display: right;
-  margin-top: 1rem;
-  padding: 0 3rem;
-}
-
 .header__main {
   position: relative;
   text-align: center;
-  color: rgba(255, 255, 255, 0.866);
+  color: var(--color-white);
 }
 
 .header__main_wrapper {
   height: 70vh;
   width: 100%;
   background-image: linear-gradient(
-      rgba(179, 179, 179, 0.512),
-      rgba(0, 0, 0, 0.889)
+      rgba(179, 179, 179, 0.472),
+      rgba(35, 34, 34, 0.87),
+      rgba(0, 0, 0, 0.917)
     ),
     url(../images/img2.jpg);
   background-size: cover;
   background-position: center;
-  background-color: black;
 }
 
 .header__main_heading {
   position: relative;
-
   top: 30%;
 }
 
-.heading1 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: 300;
-}
-
-.heading3 {
-  padding: 1.5rem 0;
-  font-size: 1.5rem;
-  font-weight: 200;
-}
-
-/* .btn {
-  text-transform: uppercase;
-  padding: 0.9rem 1.6rem;
-  margin: 2rem 0;
-  background-color: transparent;
-  border-radius: 15px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.901);
-} */
-
-.button:hover,
-.button:focus {
-  outline: none;
-  color: var(--end);
-}
-
-.button {
-  --width: 210px;
-  --height: 70px;
-  --begin: white;
-  --end: rgb(98, 61, 140);
-  position: relative;
-  display: inline-block;
-  width: var(--width);
-  height: var(--height);
-  line-height: var(--height);
-  color: var(--begin);
-  text-align: center;
-  font-size: 24px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: 2s;
-  background-color: transparent;
-  border-color: transparent;
-  margin: 4rem 0;
-}
-
-.button__svg,
-.button__rect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  fill: none;
-}
-
-.button__rect {
-  stroke: var(--begin);
-  stroke-width: 5;
-  stroke-dasharray: var(--height) var(--width);
-  stroke-dashoffset: calc(
-    2 * var(--width) + 2 * var(--height) + var(--height) / 2
-  );
-  /* stroke-dashoffset: 595px; */
-  transition: 2s;
-}
-
-.button:hover .button__rect,
-.button:focus .button__rect {
-  stroke: var(--end);
-  stroke-dashoffset: calc(var(--height)+ var(--height) / 2);
-}
 /* MAIN */
 
 main {
+  position: relative;
+  /* height: 95vh; */
+}
+.main__heading {
+  position: relative;
+  top: 18%;
+}
+
+.main__aboutus {
+  position: relative;
+  text-align: center;
+  height: 120vh;
+  color: var(--color-white);
+  background-color: var(--color);
+}
+
+.main__article {
+  position: relative;
+  top: 25%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.main__article_top {
+  font-size: 1.5rem;
+  /* width: 30rem; */
+  padding: 1rem 7rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+}
+.main__article_bottom {
+  margin-top: 3.2rem;
+  padding: 0;
+}
+
+.main__article__top_p {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.main__article_bottom_img {
+  width: 30rem;
+  height: 20rem;
+}
+
+/* MAIN NEWS */
+.main__news {
+  position: relative;
   height: 90vh;
+  background: var(--color-white);
+  color: var(--color);
 }
 
 /* FOOTER */
@@ -176,13 +144,13 @@ footer {
   position: relative;
   height: 50vh;
   font-size: 19px;
-  background-color: rgba(48, 48, 48, 0.916);
+  background-color: rgba(32, 31, 31, 0.916);
   background-image: linear-gradient(
-    rgba(58, 58, 58, 0.898),
-    rgba(17, 17, 17, 0.849)
+    rgba(45, 44, 44, 0.898),
+    rgba(17, 17, 17, 0.922)
   );
   font-family: "Noto Sans", sans-serif;
-  color: rgba(255, 255, 255, 0.793);
+  color: var(--color-white);
 }
 .footer__wrapper {
 }
@@ -205,7 +173,7 @@ footer {
 .pink {
   font-size: 21px;
   font-weight: 900;
-  color: rgba(197, 47, 120, 0.905);
+  color: var(--color-pink);
   margin: 0.4rem 0;
 }
 
