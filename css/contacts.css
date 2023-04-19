@@ -45,10 +45,10 @@ span {
 main {
   background-color: black;
   background-image: linear-gradient(
-    rgba(146, 146, 146, 0.381),
+    rgba(84, 84, 84, 0.482),
     rgba(5, 5, 5, 0.863)
   );
-  height: 150vh;
+  height: 230vh;
 }
 
 .main__wrapper {
@@ -94,4 +94,24 @@ main {
 .main__social-networks {
   position: relative;
   display: flex;
+  justify-content: space-around;
+  width: 20%;
+  margin: 5rem auto;
+}
+
+.fa-brands {
+  font-size: 3rem;
+}
+
+.main__contact_map {
+  position: relative;
+  /* background-color: rgba(0, 0, 0, 0.905); */
+  height: 65vh;
+  text-align: center;
+}
+
+iframe {
+  position: relative;
+  width: 50rem;
+  box-shadow: 6px 6px 10px var(--color-pink);
 }

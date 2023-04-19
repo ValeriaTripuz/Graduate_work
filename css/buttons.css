@@ -66,3 +66,33 @@
 .button_send {
   font-size: 20px;
 }
+
+.button2 {
+  position: relative;
+  margin: 2rem 0;
+  padding: 0;
+  color: black;
+  cursor: pointer;
+  /* text-transform: lowercase; */
+  font-size: 1rem;
+  letter-spacing: 0;
+  text-align: left;
+  font-weight: 100;
+  line-height: normal;
+}
+
+.button2:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px; /*задаём ширину линии*/
+  background-color: var(--color-pink); /*задаём цвет линии*/
+  content: "";
+  transition: width 0.5s ease-out;
+}
+
+.button:hover:after,
+.button:focus:after {
+  width: 50%;
+}

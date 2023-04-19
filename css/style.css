@@ -10,17 +10,19 @@ body {
   list-style: none;
   color: var(--color);
 }
-/* HEADER */
 
-.header {
+a {
+  text-decoration: none;
+  color: var(--color);
+  cursor: pointer;
 }
+/* HEADER */
 .header__nav {
   position: relative;
   display: flex;
 }
 
 .header__nav_logo {
-  /* border: 1px solid black; */
   margin: 0 2rem;
 }
 
@@ -32,7 +34,6 @@ body {
   position: relative;
   top: 1rem;
   width: 100%;
-  /* border: 1px solid black; */
   font-size: 1.5rem;
   font-weight: 200;
   text-transform: uppercase;
@@ -83,9 +84,9 @@ body {
 }
 
 /* MAIN */
-
 main {
   position: relative;
+  background-color: var(--color-white);
   /* height: 95vh; */
 }
 .main__heading {
@@ -96,9 +97,14 @@ main {
 .main__aboutus {
   position: relative;
   text-align: center;
-  height: 120vh;
+  height: 150vh;
   color: var(--color-white);
-  background-color: var(--color);
+  /* background-color: var(--color); */
+  background-image: linear-gradient(
+    var(--color),
+    rgba(0, 0, 0, 0.968),
+    var(--color-white)
+  );
 }
 
 .main__article {
@@ -134,9 +140,45 @@ main {
 /* MAIN NEWS */
 .main__news {
   position: relative;
-  height: 90vh;
+  height: 80vh;
   background: var(--color-white);
   color: var(--color);
+}
+
+.main__news_header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.main__news_header_first {
+  text-transform: uppercase;
+}
+
+.main__news_wrapper {
+  width: 90%;
+  margin: 5rem auto;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main__news_wrapper_box {
+  padding: 1rem;
+  width: 20rem;
+}
+
+.heading5 {
+  text-transform: uppercase;
+}
+
+/* MAIN GALLERY */
+.main__gallery {
+  position: relative;
+  height: 95vh;
+  background-color: var(--color-white);
 }
 
 /* FOOTER */
@@ -144,29 +186,24 @@ footer {
   position: relative;
   height: 50vh;
   font-size: 19px;
-  background-color: rgba(32, 31, 31, 0.916);
+  background-color: rgba(17, 16, 16, 0.916);
   background-image: linear-gradient(
-    rgba(45, 44, 44, 0.898),
+    rgba(45, 44, 44, 0.957),
     rgba(17, 17, 17, 0.922)
   );
   font-family: "Noto Sans", sans-serif;
   color: var(--color-white);
 }
-.footer__wrapper {
-}
-
 .footer__wrapper_contacts {
   display: flex;
   justify-content: space-around;
   padding: 5rem 1rem;
-  /* border: 1px solid white; */
 }
 
 .footer__wrapper_contacts_row {
   display: flex;
   flex-direction: column;
   letter-spacing: 0.03rem;
-  /* border: 1px solid white; */
   text-align: left;
 }
 
@@ -184,7 +221,6 @@ footer {
 }
 
 .footer__wrapper_rights {
-  /* border: 1px solid white; */
   text-align: center;
   font-size: 16px;
 }
