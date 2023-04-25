@@ -10,9 +10,8 @@ dotenv.config();
 const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  database: "dentistry",
+  database: "teatrprod",
   // password: "Taximoto_12345678",
-  password: "student",
 });
 
 // Проверяем соединения с MySQL
