@@ -97,14 +97,10 @@ main {
 .main__aboutus {
   position: relative;
   text-align: center;
-  height: 150vh;
+  height: 120vh;
   color: var(--color-white);
   /* background-color: var(--color); */
-  background-image: linear-gradient(
-    var(--color),
-    rgba(0, 0, 0, 0.968),
-    var(--color-white)
-  );
+  background-image: linear-gradient(var(--color), rgba(0, 0, 0, 0.968));
 }
 
 .main__article {
@@ -143,6 +139,7 @@ main {
   height: 80vh;
   background: var(--color-white);
   color: var(--color);
+  padding-top: 8rem;
 }
 
 .main__news_header {
