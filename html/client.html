@@ -4,10 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/heading.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/colors.css" />
+    <!-- <link rel="stylesheet" href="../css/form.css" /> -->
+    <link rel="stylesheet" href="../css/client.css" />
     <title>Персональная страница</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <a href="../html/index.html"
+        ><i class="fa fa-home home" aria-hidden="true"></i
+      ></a>
+      <div class="header__welcoming">
+        <h1 class="header__welcoming_text" id="welcoming">
+          Приветствуем! <span>Lera</span>
+        </h1>
+      </div>
+      <div class="date_time"></div>
+      <div class="header__client_icon">
+        <a href="#"><i class="fa-regular fa-circle-user icon"></i></a>
+      </div>
+    </header>
+    <main>
+      <div class="main__wrapper">
+        <div class="main__first">
+          <h3>Оставить заявку</h3>
+          <form action="">
+            <input type="text" placeholder="Ваш Email" />
+            <select name="" id="" placeholder="">
+              <option value=""></option>
+            </select>
+            <textarea
+              name="message"
+              placeholder="Подробности к заявке"
+              cols="20"
+              rows="5"
+            ></textarea>
+            <button class="button btn_client" type="submit">Отправить</button>
+          </form>
+        </div>
+        <div class="main__second">
+          <h3>Приобретенные вами товары и услуги</h3>
+          <div class="main__second_obtained">
+            <span>Text information</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/d0a521b1f4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/client_account.js"></script>
+    <script src="../scripts/script.js"></script>
   </body>
 </html>

@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+
     <link rel="stylesheet" href="../css/heading.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
     <link rel="stylesheet" href="../css/icons.css" />
     <link rel="stylesheet" href="../css/colors.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Театральная продукция</title>
   </head>
   <body>
@@ -149,7 +150,89 @@
         </a>
       </div>
 
-      <div class="main__gallery"></div>
+      <div class="main__gallery">
+        <div class="wrapper">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <div class="carousel">
+            <img src="../images/slide4.jpeg" alt="img" draggable="false" />
+            <img src="../images/slide7.jpeg" alt="img" draggable="false" />
+            <img src="../images/slide8.jpeg" alt="img" draggable="false" />
+            <!-- <img src="../images/slide11.jpeg" alt="img" draggable="false" /> -->
+            <img src="../images/slide10.jpeg" alt="img" draggable="false" />
+            <img src="../images/slide12.jpeg" alt="img" draggable="false" />
+            <img src="../images/slide13.jpeg" alt="img" draggable="false" />
+            <img src="../images/slide14.jpeg" alt="img" draggable="false" />
+            <img src="../images/slide16.jpeg" alt="img" draggable="false" />
+            <img src="../images/slide15.jpeg" alt="img" draggable="false" />
+          </div>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+
+      <div class="comments">
+        <div class="comments__wrapper">
+          <div class="comments__header">
+            <h1 class="heading1">Оставьте комментарий</h1>
+          </div>
+          <div class="comments__input">
+            <form action="">
+              <textarea
+                name=""
+                id=""
+                cols="10"
+                rows="4"
+                placeholder="Ваш комментарий"
+              ></textarea>
+              <a href="#" class="button">
+                <svg class="button__svg">
+                  <rect class="button__rect"></rect>
+                </svg>
+                Отправить
+              </a>
+            </form>
+          </div>
+          <div class="comments__section">
+            <div class="comments__section_comment">
+              <div class="comments__section_comment_photo">
+                <img src="../images/face1.jpeg" alt="photo" />
+              </div>
+              <div class="comments__section_comment_text">
+                <span>Наталия Бур</span>
+                <p>
+                  Не раз приобретала микрофоны у данной компании. Советую!!!
+                  Качество огонь.
+                </p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="comments__section_comment">
+              <div class="comments__section_comment_photo">
+                <img src="../images/photo2.jpeg" alt="photo" />
+              </div>
+              <div class="comments__section_comment_text">
+                <span>Виктор Редьков</span>
+                <p>
+                  Брал освещение для съемок! Все работало, ничего не подвело.
+                  Буду продолжать обращаться.
+                </p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="comments__section_comment">
+              <div class="comments__section_comment_photo">
+                <img src="../images/photo3.jpeg" alt="photo" />
+              </div>
+              <div class="comments__section_comment_text">
+                <span>Татьяна Филимонова</span>
+                <p>
+                  Заказывали грим для детей. Все отлично, сотрудники помогли все
+                  подобрать.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!--  -->
     <footer>
@@ -200,5 +283,6 @@
       src="https://kit.fontawesome.com/d0a521b1f4.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../scripts/index.js"></script>
   </body>
 </html>
