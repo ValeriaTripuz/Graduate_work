@@ -36,8 +36,8 @@ span {
 main {
   background-color: black;
   background-image: linear-gradient(
-    rgba(84, 84, 84, 0.482),
-    rgba(5, 5, 5, 0.863)
+    rgba(148, 146, 146, 0.748),
+    rgba(52, 52, 52, 0.906)
   );
   height: 230vh;
 }

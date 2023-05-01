@@ -1,13 +1,13 @@
 // Весь сервер
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const cors = require("cors");
 const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 dotenv.config();
 
-// // Подключаем файл с базой данных
-// const dbService = require("./dbService");
+// Подключаем файл с базой данных
+const dbService = require("./dbService");
 
 app.use(cors());
 app.use(express.json());

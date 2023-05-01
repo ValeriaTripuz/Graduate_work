@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="../css/heading.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
     <link rel="stylesheet" href="../css/icons.css" />
@@ -20,10 +19,10 @@
         </div>
         <div class="header__nav_navig">
           <ul class="navigation">
-            <li><a href="">О Нас</a></li>
-            <li><a href="../html/service.html">Услуги</a></li>
+            <li><a href="#about">О Нас</a></li>
+            <li><a href="../html/services.html">Услуги</a></li>
             <li><a href="../html/contacts.html">Контакты</a></li>
-            <li><a href="#">Новости</a></li>
+            <li><a href="#news">Новости</a></li>
             <li><a href="../html/payments.html">Оплата</a></li>
             <li><a href="../html/delivery.html">Доставка</a></li>
           </ul>
@@ -53,6 +52,7 @@
     <!--  -->
     <main>
       <div class="main__aboutus">
+        <a name="about"></a>
         <div class="main__heading">
           <h4 class="heading4">Немного</h4>
           <h1 class="heading1">О Нас</h1>
@@ -73,26 +73,27 @@
               товаров в кратчайшие сроки.
             </p>
           </div>
-          <div class="main__article_bottom">
-            <img
-              class="main__article_bottom_img img"
-              src="../images/about1.jpeg"
-              alt="photo"
-            />
-            <img
-              class="main__article_bottom_img img"
-              src="../images/about2.webp"
-              alt="photo"
-            />
-            <img
-              class="main__article_bottom_img img"
-              src="../images/about3.jpeg"
-              alt="photo"
-            />
-          </div>
         </div>
       </div>
+      <div class="main__article_bottom">
+        <img
+          class="main__article_bottom_img img"
+          src="../images/about1.jpeg"
+          alt="photo"
+        />
+        <img
+          class="main__article_bottom_img img"
+          src="../images/about2.webp"
+          alt="photo"
+        />
+        <img
+          class="main__article_bottom_img img"
+          src="../images/about3.jpeg"
+          alt="photo"
+        />
+      </div>
       <div class="main__news">
+        <a name="news"></a>
         <div class="main__news_header">
           <span class="main__news_header_first"
             ><div class="heading4">Последние</div></span
@@ -233,7 +234,66 @@
           </div>
         </div>
       </div>
+      <div class="subscription">
+        <div class="subscription__title">
+          <h1 class="heading1">Подпишитесь</h1>
+          <h3 class="heading3">
+            Подпишитесь, чтобы первыми узнавать о наших акциях и скидках
+          </h3>
+        </div>
+        <div class="subscription__main">
+          <input type="text" placeholder="Email" />
+          <a href="#" class="button">
+            <svg class="button__svg">
+              <rect class="button__rect"></rect>
+            </svg>
+            Подписаться
+          </a>
+        </div>
+      </div>
+
+      <div class="works"></div>
     </main>
+
+    <!-- MODAL -->
+    <div class="modal_window">
+      <div class="modal_window__wrapper">
+        <div class="cross"><i class="fa-solid fa-xmark"></i></div>
+        <div class="sign">
+          <a href=""><span id="enter"> Войти </span></a> <span> / </span
+          ><a href=""><span id="sign_up"> Зарегистрироваться</span></a>
+        </div>
+        <div class="box sign_up" id="box_sign_up">
+          <div class="sign_up_wrapper">
+            <span>Зарегистрироваться</span>
+            <input type="text" placeholder="Name" id="name" />
+            <input type="text" placeholder="Surname" id="surname" />
+            <input type="text" placeholder="Password" id="password" />
+            <input type="text" placeholder="Password" id="password2" />
+            <a href="#" class="button modal_button">
+              <svg class="button__svg">
+                <rect class="button__rect"></rect>
+              </svg>
+              Регистрация
+            </a>
+          </div>
+        </div>
+        <div class="box enter" id="box_enter">
+          <div class="enter_wrapper">
+            <span>Войти</span>
+            <input type="text" placeholder="Name" id="enterName" />
+            <input type="text" placeholder="Surname" id="enterSurname" />
+            <input type="text" placeholder="Password" id="enterPassword" />
+            <a href="#" class="button modal_button">
+              <svg class="button__svg">
+                <rect class="button__rect"></rect>
+              </svg>
+              Войти
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--  -->
     <footer>
       <div class="footer__wrapper">

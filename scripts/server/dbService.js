@@ -1,7 +1,7 @@
 // Вся база данных
 
 // Подключение всех используемых компонентов
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const dotenv = require("dotenv");
 let instance = null;
 dotenv.config();
@@ -11,7 +11,7 @@ const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   database: "teatrprod",
-  // password: "Taximoto_12345678",
+  password: "root1234",
 });
 
 // Проверяем соединения с MySQL

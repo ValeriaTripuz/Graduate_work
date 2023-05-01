@@ -74,3 +74,46 @@ carousel.addEventListener("touchmove", dragging);
 carousel.addEventListener("mouseup", dragStop);
 carousel.addEventListener("mouseleave", dragStop);
 carousel.addEventListener("touchstop", dragStop);
+
+// Modal
+const iconUser = document.querySelector(".icon");
+const modalWindow = document.querySelector(".modal_window");
+const cross = document.querySelector(".cross");
+
+iconUser.addEventListener("click", () => {
+  modalWindow.style.display = "block";
+});
+
+cross.addEventListener("click", () => {
+  modalWindow.style.display = "none";
+});
+
+const enter = document.querySelector("#enter");
+const signUp = document.querySelector("#sign_up");
+const boxSignUp = document.querySelector("#box_sign_up");
+const boxEnter = document.querySelector("#box_enter");
+
+enter.addEventListener("click", (e) => {
+  boxEnter.style.display = "block";
+  boxSignUp.style.display = "none";
+  e.preventDefault();
+  console.log("enter");
+});
+
+signUp.addEventListener("click", (e) => {
+  boxSignUp.style.display = "block";
+  boxEnter.style.display = "none";
+  e.preventDefault();
+  console.log("sign up");
+});
+
+// Sign Up
+const name = document.getElementById("name");
+const surname = document.getElementById("surname");
+const password = document.getElementById("password");
+const password2 = document.getElementById("password2");
+const btnSignUp = document.querySelector(".modal_button");
+
+btnSignUp.addEventListener("click", () => {
+  console.log(name.value, surname.value, password.value, password2.value);
+});
