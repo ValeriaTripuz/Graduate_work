@@ -17,3 +17,13 @@ function date_time() {
 }
 
 dateTimeContainer.innerHTML = date_time();
+
+getServices().then((data) => {
+  const select = document.getElementById("service_select");
+  for (let i = 0; i < data.length; i++) {
+    select.innerHTML += `<option>${data[i].serviceName}</option>`;
+    console.log(data[i].serviceName);
+  }
+  //   const d = data[0];
+  //   console.log(d);
+});

@@ -8,5 +8,15 @@
   },
   "scripts": {
     "start": "node server.js"
-  }
+  },
+  "name": "project",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

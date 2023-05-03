@@ -20,7 +20,7 @@
         <div class="header__nav_navig">
           <ul class="navigation">
             <li><a href="#about">О Нас</a></li>
-            <li><a href="../html/services.html">Услуги</a></li>
+            <li><a href="../html/services.html">Услуги и товары</a></li>
             <li><a href="../html/contacts.html">Контакты</a></li>
             <li><a href="#news">Новости</a></li>
             <li><a href="../html/payments.html">Оплата</a></li>
@@ -179,12 +179,12 @@
             <form action="">
               <textarea
                 name=""
-                id=""
+                id="comment_text"
                 cols="10"
                 rows="4"
                 placeholder="Ваш комментарий"
               ></textarea>
-              <a href="#" class="button">
+              <a href="#" class="button btn_comment">
                 <svg class="button__svg">
                   <rect class="button__rect"></rect>
                 </svg>
@@ -242,9 +242,9 @@
           </h3>
         </div>
         <div class="subscription__main">
-          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="Email" id="subscribe_email" />
           <a href="#" class="button">
-            <svg class="button__svg">
+            <svg class="button__svg subscribe">
               <rect class="button__rect"></rect>
             </svg>
             Подписаться
@@ -266,10 +266,11 @@
         <div class="box sign_up" id="box_sign_up">
           <div class="sign_up_wrapper">
             <span>Зарегистрироваться</span>
-            <input type="text" placeholder="Name" id="name" />
-            <input type="text" placeholder="Surname" id="surname" />
-            <input type="text" placeholder="Password" id="password" />
-            <input type="text" placeholder="Password" id="password2" />
+            <input type="text" placeholder="Имя" id="name" />
+            <input type="text" placeholder="Фамилия" id="surname" />
+            <input type="text" placeholder="Email" id="email" />
+            <input type="text" placeholder="Пароль" id="password" />
+            <input type="text" placeholder="Повторить пароль" id="password2" />
             <a href="#" class="button modal_button">
               <svg class="button__svg">
                 <rect class="button__rect"></rect>
@@ -281,15 +282,16 @@
         <div class="box enter" id="box_enter">
           <div class="enter_wrapper">
             <span>Войти</span>
-            <input type="text" placeholder="Name" id="enterName" />
-            <input type="text" placeholder="Surname" id="enterSurname" />
-            <input type="text" placeholder="Password" id="enterPassword" />
-            <a href="#" class="button modal_button">
+            <input type="text" placeholder="Имя" id="enterName" />
+            <input type="text" placeholder="Фамилия" id="enterSurname" />
+            <input type="text" placeholder="Пароль" id="enterPassword" />
+            <a href="#" class="button modal_button login">
               <svg class="button__svg">
                 <rect class="button__rect"></rect>
               </svg>
               Войти
             </a>
+            <div class="error_enter"></div>
           </div>
         </div>
       </div>
@@ -343,6 +345,7 @@
       src="https://kit.fontawesome.com/d0a521b1f4.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../scripts/script.js"></script>
     <script src="../scripts/index.js"></script>
   </body>
 </html>
